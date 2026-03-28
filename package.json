@@ -1,0 +1,23 @@
+{
+  "name": "backend-learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdeepak-01/backend-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devdeepak-01/backend-learning/issues"
+  },
+  "homepage": "https://github.com/devdeepak-01/backend-learning#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
