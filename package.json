@@ -18,6 +18,7 @@
   "homepage": "https://github.com/devdeepak-01/backend-learning#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3"
   }
 }

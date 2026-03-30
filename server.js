@@ -1,4 +1,5 @@
 const express= require ('express');
+const mongoose= require("mongoose")
 const app=express();
 
 const bodyParser=require('body-parser');
@@ -21,7 +22,7 @@ app.get("/",(req,res)=>{
 })
 
 //POST request can only be seen using a postman 
-//Using a Body Parser to parse the data into the req.body
+//Using a Body Parser to parse the data into the req.body object
 
 app.post('/api/course',(req,res)=>{
     const {courseName,instructorName}=req.body;
@@ -30,9 +31,7 @@ app.post('/api/course',(req,res)=>{
     res.send("Data Submitted"); 
 
 })
-
-
-
+require('./config/db')
 
 
 

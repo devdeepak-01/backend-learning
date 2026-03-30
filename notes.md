@@ -22,4 +22,9 @@ used const express
 
 ## Connection to the MongoDB
 - It is a NoSql DB where data can be stored in the form documents,key-value pair,graphs etc
-- Usually known for scalability 
+- Usually known for scalability and good performance
+-  Using commands in mongo shell we can do **CRUD** performance where **CRUD** stands for
+    Create,Read,Update,Delete
+- We use Mongodb Compass It is a GUI for the mongo shell
+- we connect **MongoDb** with express using **Mongoose**
+- 
