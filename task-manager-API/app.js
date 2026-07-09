@@ -7,23 +7,23 @@ const express = require('express');
 // Local Modules
 const connectDB = require('./db/connect');
 const tasks = require('./routes/task');
-
+const path = require('path');
 const app = express();
-
+const notFound=require('./middleware/not-found')
 // Port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 // Middleware
+
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-// Test Route
-app.get('/hello', (req, res) => {
-    res.send('Task Manager App');
-});
+
 
 // Task Routes
-app.use('/v1/api/tasks', tasks);
-
+app.use('/api/v1/tasks', tasks);
+app.use(notFound)
 // Start Server
 const start = async () => {
     try {
